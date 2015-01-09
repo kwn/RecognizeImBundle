@@ -4,7 +4,7 @@
     "description": "Symfony2 bundle that provides Recognize.im PHP client. Allows image recognizing, includes REST and SOAP API.",
     "homepage":    "https://github.com/kwn/RecognizeImBundle",
     "license":     "MIT",
-    "keywords":    ["recognizeim", "recognize.im", "image", "reconizing", "recognize", "symfony", "bundle"],
+    "keywords":    ["recognizeim", "recognize.im", "image", "reconizing", "recognize", "symfony", "symfony2", "bundle"],
     "authors": [
         {
             "name":     "Karol Wnuk",
