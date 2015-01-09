@@ -1,6 +1,6 @@
 <?php
 
-namespace Kwn\RecogniezeImBundle\DependencyInjection;
+namespace Kwn\RecognizeImBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
