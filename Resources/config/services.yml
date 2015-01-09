@@ -1,0 +1,30 @@
+services:
+    recognizeim:
+        class: RecognizeIm\RecognizeImApi
+        arguments:
+            - @recognizeim.client.soap
+            - @recognizeim.client.rest
+
+    recognizeim.configuration:
+        class: RecognizeIm\Configuration
+        arguments:
+            - %recognizeim.client_id%
+            - %recognizeim.api_key%
+            - %recognizeim.clapi_key%
+
+    recognizeim.image_verificator:
+        class: RecognizeIm\Service\ImageVerificator
+
+    recognizeim.frame_generator:
+            class: RecognizeIm\Service\FrameGenerator
+
+    recognizeim.client.soap:
+        class: RecognizeIm\Client\SoapApi
+        arguments:
+            - @recognizeim.configuration
+
+    recognizeim.client.rest:
+        class: RecognizeIm\Client\RestApi
+        arguments:
+            - @recognizeim.configuration
+            - @recognizeim.image_verificator
