@@ -1,6 +1,6 @@
 <?php
 
-namespace Kwn\RecogniezeImBundle;
+namespace Kwn\RecognizeImBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -18,11 +18,23 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('recognizeim');
-        
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode = $treeBuilder->root('kwn_recognize_im');
+
+        $rootNode
+            ->children()
+                ->scalarNode('client_id')
+                    ->isRequired()
+                    ->cannotBeEmpty()
+                ->end()
+                ->scalarNode('api_key')
+                    ->isRequired()
+                    ->cannotBeEmpty()
+                ->end()
+                ->scalarNode('clapi_key')
+                    ->isRequired()
+                    ->cannotBeEmpty()
+                ->end()
+            ->end();
 
         return $treeBuilder;
     }

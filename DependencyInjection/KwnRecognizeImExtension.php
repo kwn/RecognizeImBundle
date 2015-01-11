@@ -24,5 +24,9 @@ class KwnRecognizeImExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
+        $container->setParameter('recognizeim.client_id', $config['client_id']);
+        $container->setParameter('recognizeim.api_key', $config['api_key']);
+        $container->setParameter('recognizeim.clapi_key', $config['clapi_key']);
     }
 }
