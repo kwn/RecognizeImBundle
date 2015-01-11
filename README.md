@@ -43,7 +43,7 @@ Configuration
 Configure bundle in app/config.yml file with credentials obtained from recognize.im account:
 
 ```yaml
-// app/config.yml
+# app/config.yml
 
 kwn_recognize_im:
     client_id:  CLIENT_ID
@@ -64,4 +64,10 @@ use RecognizeIm\Model\Image;
 // ...
 $image  = new Image('/home/kwn/Pictures/test.jpg');
 $result = $this->get('recognizeim')->getRestApiClient()->recognize($image, 'multi');
+```
+
+There's a command for building RecognizeIm index as well:
+
+```bash
+$ php app/console recognizeim:build-index
 ```
