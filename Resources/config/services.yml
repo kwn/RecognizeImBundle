@@ -1,6 +1,7 @@
 services:
     recognizeim:
         class: RecognizeIm\RecognizeImApi
+        lazy: true
         arguments:
             - @recognizeim.client.soap
             - @recognizeim.client.rest
@@ -20,6 +21,7 @@ services:
 
     recognizeim.client.soap:
         class: RecognizeIm\Client\SoapApi
+        lazy: true
         arguments:
             - @recognizeim.configuration
 

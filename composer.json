@@ -16,7 +16,8 @@
     "require": {
         "php": ">=5.3.3",
         "kwn/recognizeim": "~1.0",
-        "symfony/framework-bundle": "~2.3"
+        "symfony/framework-bundle": "~2.3",
+        "ocramius/proxy-manager": "~0.5"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
