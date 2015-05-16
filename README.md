@@ -1,5 +1,6 @@
 KwnRecognizeImBundle
 ====================
+[![Code Climate](https://codeclimate.com/github/kwn/RecognizeImBundle/badges/gpa.svg)](https://codeclimate.com/github/kwn/RecognizeImBundle)
 
 This bundle integrates [RecognizeIm](https://github.com/kwn/RecognizeIm) client with Symfony 2.
 
